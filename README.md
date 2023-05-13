@@ -10,13 +10,13 @@ npm i google-imgs
 # Require to export function
 ```js
 //CommonJS
-const google = require("youtube-s-dl");
+const google = require("google-imgs");
 ```
 
 ## SIMPLE USAGE
 ### gives us a limit of 100 image links (un-filtered) maybe some are bad image links like need auth or broken links.
 ```js
-const google = require("youtube-s-dl");
+const google = require("google-imgs");
 
 //searchImage param. is string
 let result = await google.searchImage(<String>)
@@ -27,7 +27,7 @@ console.log(result)
 ### filtering the result image links only get the working ones
 ## METHOD 1: Promise.all()
 ```js
-const google = require("youtube-s-dl");
+const google = require("google-imgs");
 
 //searchImage param. is string
 let result = await google.searchImage(<String>)
@@ -49,7 +49,7 @@ console.log(workingUrls)
 
 ## METHOD 2: limiting working urls (faster)
 ```js
-const google = require("youtube-s-dl");
+const google = require("google-imgs");
 
 //searchImage param. is string
 let result = await google.searchImage(<String>)

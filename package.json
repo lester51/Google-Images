@@ -1,6 +1,6 @@
 {
   "name": "google-imgs",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "A Google Images scraper without using Google CSE.",
   "main": "request-image.js",
   "scripts": {
