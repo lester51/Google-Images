@@ -1,0 +1,36 @@
+{
+  "name": "google-imgs",
+  "version": "1.0.3-beta",
+  "description": "A Google Images scraper without using Google CSE.",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly --project tsconfig.esm.json & tsc --project tsconfig.cjs.json"
+  },
+  "exports": {
+       "import": "./dist/types/index.d.ts",
+       "require": "./dist/cjs/index.js",
+       "default": "./dist/types/index.d.ts"
+   },
+  "keywords": [
+    "google-scraper",
+    "google-image-scraper",
+    "google",
+    "google-images"
+  ],
+  "dependencies": {
+   "axios": "^1.4.0",
+   "cheerio": "^1.0.0-rc.12",
+   "lodash.flatten": "4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lester51/Google-Images.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lester51/Google-Images/issues"
+  },
+  "homepage": "https://github.com/lester51/Google-Images",
+  "author": "HackMeSenpai",
+  "license": "MIT"
+}
